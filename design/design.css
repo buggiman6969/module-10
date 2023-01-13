@@ -1,0 +1,276 @@
+/* ==========UNIVERSAL============= */
+*{
+    font-family: poppins;
+}
+body{
+    margin: auto;
+    background-color: #F3F1FF;
+}
+
+/* ==========HEADER DESIGN=========== */
+.header{
+    background-color: #562EFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.logo-img{
+    width: 10%;
+    margin-top: 2%;
+}
+.name{
+    color: white;
+    padding: auto;
+    margin-right: 5%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 35%;
+}
+.nav-option > ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 10%;
+}
+
+/* ===========TOP PART DESIGN============ */
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 70%;
+}
+/* --------------------TOP PLAYERS----------------- */
+.top-part {
+    background-color: white;
+    padding: 2%;
+    padding-left: 4%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+.part-tittle{
+    width: 500;
+    color: #562EFF;
+    
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.players{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.player-img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    width: 500;
+}
+/* --------------------TOP BLOGS----------------- */
+.top-blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-content: space-around;
+    justify-items: stretch;
+}
+.blog{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+.blog-img{
+    width: 177PX;
+    height: 117PX;
+}
+.title{
+    gap: 1%;
+}
+.tittle-href{
+    width: 50;
+    color: #562EFF;
+}
+.blog-sub-tittle{
+    color: #9F9F9F;
+}
+/* ===========BOTTOM PART DESIGN============== */
+.bottom-part{
+    background-color: white;
+    padding: 2%;
+    padding-left: 4%;
+    border-radius: 5px;
+}
+.all-course{
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    border: 1px s #9F9F9F;
+    padding: 2%;
+    border-radius: 10px;
+    height: 300px;
+    width: 251px;
+    box-shadow: 5px 10px 5px 10px #b1afaf2c;
+}
+.course>img{
+    width: 244px;
+    height: 114px;
+    
+}
+.course-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini-red{
+    color: #ED6B4F;
+}
+.star{
+    width: 20px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    background-color: #FEE5DF;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    height: 29px;
+    width: 95px;
+}
+/* ======================Responsive=================== */
+@media screen and (max-width:576px) {
+    /* ==========HEADER DESIGN=========== */
+    .header{
+        margin: 0%;
+        justify-content: space-evenly;
+    }
+    .logo-img{
+        width: 40%;
+        margin-top: 2%;
+    }
+    .name{
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+    .nav{
+        gap: 3%;
+    }
+    .nav-option > ul{
+        gap: 2%;
+        justify-content: space-around;
+    }
+    body{
+        margin: 0%;
+        max-width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    /* ===========TOP PART DESIGN============ */
+    /* --------------------TOP PLAYERS----------------- */
+    .top-players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --------------------TOP BLOGS----------------- */
+    .top-blog{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50%;
+    }
+    /* ===========BOTTOM PART DESIGN============== */
+    .all-course{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .course{
+        border: 1px s #9F9F9F;
+        padding: 2%;
+        border-radius: 10px;
+        height: 300px;
+        width: 251px;
+        box-shadow: 5px 10px 5px 10px #b1afaf2c;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:1180px) {
+    /* ==========HEADER DESIGN=========== */
+    .header{
+        margin: 0%;
+        justify-content: space-evenly;
+    }
+    .logo-img{
+        width: 10%;
+        margin-top: 2%;
+    }
+    .name{
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+    .nav{
+        gap: 6%;
+    }
+    .nav-option > ul{
+        gap: 5%;
+        justify-content: space-around;
+    }
+    body{
+        margin: 0%;
+        max-width: 100%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    /* ===========TOP PART DESIGN============ */
+    body{
+        margin: 0%;
+        max-width: 100%;
+        background-color: white;
+    }
+    /* --------------------TOP PLAYERS----------------- */
+    .top-players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* --------------------TOP BLOGS----------------- */
+    .top-blog{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20%;
+    }
+    /* ===========BOTTOM PART DESIGN============== */
+    .all-course{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .course{
+        border: 1px s #9F9F9F;
+        padding: 2%;
+        border-radius: 10px;
+        height: 300px;
+        width: 251px;
+        box-shadow: 5px 10px 5px 10px #b1afaf2c;
+        margin-bottom: 10%;
+    }
+}
